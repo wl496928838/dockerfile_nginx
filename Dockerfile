@@ -3,7 +3,7 @@ FROM nginx:stable
 ENV AUTHOR shellus
 ENV URL shellus
 
-RUN apt-get update
+#RUN apt-get update
 
 #RUN apt-get install curl -y
 
