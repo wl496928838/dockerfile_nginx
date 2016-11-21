@@ -1,9 +1,9 @@
 FROM nginx:stable
 
-WORKDIR /root
+ENV AUTHOR shellus
 
-ENV URL 1
+COPY entrypoint.sh /entrypoint.sh
 
-ADD entrypoint.sh /root/entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT ["/root/entrypoint.sh"]
+CMD ["/entrypoint.sh"]
