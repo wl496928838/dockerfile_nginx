@@ -1,11 +1,6 @@
 FROM nginx:stable
 
-ENV AUTHOR weiliang
 ENV URL default
-
-#RUN apt-get update
-
-#RUN apt-get install curl -y
 
 RUN apt-get install wget -y
 
