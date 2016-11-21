@@ -1,5 +1,9 @@
 FROM nginx:stable
 
+WORKDIR /root
+
 ENV URL 1
 
-ADD $URL /etc/nginx/conf.d/default.conf
+ADD entrypoint.sh /root/entrypoint.sh
+
+ENTRYPOINT ["/root/entrypoint.sh"]
