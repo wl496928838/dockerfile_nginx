@@ -2,9 +2,14 @@
 echo "-------------author: ${AUTHOR}---------------"
 
 echo $AUTHOR > author.txt
+echo $URL > URL.txt
 
-wget --no-check-certificate $URL -O default.conf
+
+
+wget $URL -O default.conf
+
 copy default.conf /etc/nginx/conf.d/default.conf
+
 copy default.conf /etc/nginx/conf.d/2.conf
 
 
