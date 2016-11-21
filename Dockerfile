@@ -1,7 +1,7 @@
 FROM nginx:stable
 
-ENV AUTHOR shellus
-ENV URL shellus
+ENV AUTHOR weiliang
+ENV URL default
 
 #RUN apt-get update
 
