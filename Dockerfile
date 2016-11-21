@@ -5,7 +5,7 @@ ENV URL shellus
 
 RUN apt-get update
 
-RUN apt-get install curl -y
+#RUN apt-get install curl -y
 
 RUN apt-get install wget -y
 

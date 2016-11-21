@@ -6,11 +6,11 @@ echo $URL > URL.txt
 
 
 
-wget $URL -O default.conf
+wget $URL -O default.conf > wget.txt
 
-copy default.conf /etc/nginx/conf.d/default.conf
+mv default.conf /etc/nginx/conf.d/default.conf > mv.txt
 
-copy default.conf /etc/nginx/conf.d/2.conf
+
 
 
 nginx -g "daemon off;"
