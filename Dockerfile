@@ -1,6 +1,7 @@
 FROM nginx:stable
 
-ENV URL default
+ENV URL /nginx/conf.d/default.conf
+ENV URL /nginx/nginx.conf
 
 RUN apt-get update
 
