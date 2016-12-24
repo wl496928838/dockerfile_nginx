@@ -1,5 +1,9 @@
 FROM nginx:stable
 
+# 设置个时区
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 ENV URL /nginx/conf.d/default.conf
 ENV URL /nginx/nginx.conf
 
